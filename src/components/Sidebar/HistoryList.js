@@ -9,11 +9,11 @@ class HistoryList extends Component {
     ]
     return (
       <div className='sidebar__history'>
-        {history.map(item => (
-          <div className='sidebar__history_item'>
+        {history.map((item, key) => (
+          <div key={key} className='sidebar__history_item'>
             <i className='fa fa-clock-o'></i>
             <div>
-              <p> You added <a href=''>{item.title}</a> by <a href=''>{item.author}</a> to your <a href=''>{item.where}</a>.</p>
+              <p> You added <a href='/'>{item.title}</a> by <a href='/'>{item.author}</a> to your <a href='/'>{item.where}</a>.</p>
               <span>24 minutes ago</span>
             </div>
           </div>

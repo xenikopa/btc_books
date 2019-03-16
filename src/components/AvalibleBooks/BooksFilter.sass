@@ -1,0 +1,51 @@
+@font-face 
+  font-family: 'Myriad Pro Light';
+  src: url('../../fonts/MyriadPro-Light.eot');
+  src: url('../../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MyriadPro-Light.woff') format('woff'),
+  url('../../fonts/MyriadPro-Light.ttf') format('truetype')
+  font-weight: normal;
+  font-style: normal;
+
+.filter
+  &__container
+    border-bottom: 1px solid #dadfea;
+    border-top: 1px solid #dadfea;
+    padding: 16px;
+    display: flex;
+    align-items: baseline;
+    & input[type='radio']
+      display: none;
+      & + label
+        font-family: 'Myriad Pro Light';
+        padding: 3px 12px;
+        border: 1px solid #eef1f7;
+        color: #78829d;
+        &:hover
+          cursor: pointer;
+      &:checked + label
+        border-radius: 10px;
+        background-color: #97b3ce;
+        color: #ffffff
+        border: 1px solid #78829d;
+
+  &__search
+    position: relative;
+    margin-left: auto;
+    & > span
+      position: absolute;
+      top: 5px;
+      left: 175px;
+      color: #8c97b2;
+    & input[type='search']
+      width: 200px;
+      height: 20px;
+      border-radius: 16px;
+      background-color: #ffffff;
+      border: 1px solid rgba(140,151,178,0.4);
+      padding: 13px;
+      font-size: 13px;
+      &::placeholder
+        font-size: 13px;
+        color: #8c97b2;
+        font-family: "Arial";
