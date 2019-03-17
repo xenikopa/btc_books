@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.sass';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
-import AvalibleBooks from './components/AvalibleBooks/AvalibleBooks';
+import VisibleBooksList from './containers/VisibleBooks';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <div className='site'>
           <Header />
           <main>
-            <AvalibleBooks />
+            <VisibleBooksList />
           </main>
         </div>
 

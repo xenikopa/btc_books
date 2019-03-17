@@ -16,10 +16,10 @@ class FilterChecked extends Component {
   
   render() {
     const filterValues = [
-      { id: 'all', title: 'All Books'},
-      { id: 'recent', title: 'Most Recent'},
-      { id: 'popular', title: 'Most Popular'},
-      { id: 'free', title: 'Free Books' }
+      { id: 'SHOW_ALL', title: 'All Books'},
+      { id: 'RECENT', title: 'Most Recent'},
+      { id: 'POPULAR', title: 'Most Popular'},
+      { id: 'FREE', title: 'Free Books' }
     ];
     return (
       <div>

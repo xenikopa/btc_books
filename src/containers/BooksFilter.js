@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './BooksFilter.sass';
-import FilterChecked from './FilterChecked';
-import SearchInput from './SearchInput';
+import '../components/BooksList/BooksList.sass';
+import { connect } from 'react-redux';
+import { setVisibilityFilter } from '../actions';
+import FilterChecked from '../components/Header/Filter/FilterChecked';
+import SearchInput from '../components/Header/Filter/SearchInput';
 class BooksFilter extends Component {
   constructor(props){
     super(props);
-
     this.state = {
-      section: this.props.section,
+      section: this.props.getInitFilter(),
       input: ''
     }
   }
@@ -25,13 +26,13 @@ class BooksFilter extends Component {
     const filter = {
       section, input
     }
-    this.props.onChange(filter);
+    this.props.dispatch(setVisibilityFilter(filter));
   }
   
   render() {
     return (
       <div className='filter__container'>
-        <FilterChecked 
+        <FilterChecked
           selected={this.state.section}
           onChangeSection={(item) => this.onChangeSelectedSection(item)}
         />
@@ -43,4 +44,14 @@ class BooksFilter extends Component {
   }
 }
 
-export default BooksFilter;
+const mapStateToProps = (state) => {
+  return {
+    getInitFilter: () => {
+      return state.filter.section
+    }
+  }
+}
+
+export default connect(
+  mapStateToProps
+)(BooksFilter)
