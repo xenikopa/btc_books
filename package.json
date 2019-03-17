@@ -6,6 +6,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-modal": "^3.8.1",
     "react-redux": "^6.0.1",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1"
@@ -16,7 +17,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "./node_modules/.bin/eslint --quiet --fix src/*.js src/*/*.js"
-
   },
   "eslintConfig": {
     "extends": "react-app"

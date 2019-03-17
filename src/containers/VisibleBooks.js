@@ -26,7 +26,7 @@ const getBooksBySection = (books, section) => {
 
 const getBooksByWord = (books, input) => {
   return input.length > 0
-    ? books.filter(x => x.title.includes(input) || x.author.includes(input))
+    ? books.filter(x => x.title.toLowerCase().includes(input) || x.author.toLowerCase().includes(input))
     : books
 }
 

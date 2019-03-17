@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-import './Sidebar.sass';
 class Menu extends Component {
   render() {
-    const menuItems = [
-      { icon: 'fa-book', title: 'Now Reading'}, 
-      { icon: 'fa-globe', title: 'Browse'}, 
-      { icon: 'fa-cart-arrow-down ', title: 'Buy Books'}, 
-      { icon: 'fa-star', title: 'Favorite Books'}, 
-      { icon: 'fa-list', title: 'Wishlist'}
-    ];
+    const { items, menuClass } = this.props;
     return (
-      <menu className='sidebar__menu'>
-        {menuItems.map((item, key) => (
+      <menu className={menuClass}>
+        {items.map((item, key) => (
           
           <li 
             className={this.props.selected === item.title ? 'is-active' : ''}

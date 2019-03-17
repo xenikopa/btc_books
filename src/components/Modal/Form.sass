@@ -1,0 +1,31 @@
+.form
+  &-group
+    display: flex
+    & .form-row
+      flex: 1;
+      &:first-child
+        padding-right: 13px;
+  &-row
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 6px 0;
+    & label
+      font-size: 13px;
+      line-height: 26px;
+      color: #444c63;
+      font-family: "Arial";
+      font-weight: bold;
+    & input
+      border-radius: 2px;
+      background-color: #ffffff;
+      border: 1px solid rgba(140, 151, 178, 0.4);
+      padding: 9px;
+      font-size: 13px;
+      color: #8c97b2;
+      font-family: "Arial";
+      position: relative;
+      &:required + label:after
+        content: '*';
+        color: #de4c4c;
+    
+        

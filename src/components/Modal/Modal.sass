@@ -1,0 +1,97 @@
+.modal
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  overflow: auto;
+  border-radius: 4px;
+  outline: currentcolor none medium;
+  &__body
+    border-top: 1px solid #dadfea;
+    border-bottom: 1px solid #dadfea;
+    display: flex;
+    height: 411px;
+    & aside
+      background-color: #eef1f7;
+      width: 200px;
+    &-menu
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      font-size: 13px;
+      line-height: 26px;
+      font-family: "Arial";
+      color: #78829d;
+      & li 
+        padding: 6px 26px;
+        &:hover
+          cursor: pointer;
+          background-color: rgba(151, 179, 206, 0.3);
+        &.is-active
+          background-color: #97b3ce;
+          color: #ffffff;
+        & i 
+          padding-right: 6px;
+    & form
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 20px 20px 20px;
+      min-width: 450px;
+  &__footer
+    flex-direction: row-reverse;
+    align-items: center;
+    & .btn 
+      border-radius: 4px;
+      color: #fff;
+      height: 34px;
+      font-size: 14px;
+      line-height: 26px;
+      color: #fff;
+      font-family: "Arial";
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      margin-left: 6px;
+      &:hover
+        cursor: pointer;
+      &.secondary
+        background-color: #97b3ce;
+        border-color: #97b3ce;
+        &:hover 
+          background-color: #acc5dd;
+          border-color: #acc5dd;
+      &.primary
+        border-color: #f2795a;
+        background-color: #f2795a;
+        &:hover 
+          background-color: #f58a6e;
+          border-color: #f58a6e;
+  &__header, &__footer
+    display: flex;
+    background-color: #eef1f7;
+    height: 60px;
+    padding: 0 20px;
+    & h2
+      font-size: 20px;
+      line-height: 26px;
+      color: #444c63;
+      font-family: "Arial";
+  &__close
+    border: none;
+    background-color: inherit;
+    margin-left: auto;
+    color: #78829d;
+    font-size: 16px;
+    &:hover
+      cursor: pointer;
+  &__overlay 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);

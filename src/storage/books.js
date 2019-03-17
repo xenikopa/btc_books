@@ -97,5 +97,5 @@ export function setInitBooks() {
 }
 
 export function getBooks() {
-  return JSON.parse(localStorage.getItem("books")) || [];
+  return JSON.parse(localStorage.getItem("books")) || books;
 }

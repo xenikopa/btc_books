@@ -10,8 +10,9 @@ class BtnAdd extends Component {
           type='button' 
           onClick={() => this.props.onClick()}
         >
-        <i className='fa fa-plus'></i>
-        Add a book</button>
+          <i className='fa fa-plus'></i>
+          Add a book
+        </button>
       </div>
     );
   }
