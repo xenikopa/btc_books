@@ -91,11 +91,36 @@ const books = [
   }
 ]
 
-export function setInitBooks() {
+function setInitBooks() {
   const items = JSON.stringify(books)
   localStorage.setItem('books', items);
 }
 
-export function getBooks() {
+function getBooks() {
   return JSON.parse(localStorage.getItem("books")) || books;
+}
+
+function saveBook(book) {
+  const books = getBooks();
+  if (book.id === 0) {
+    const updatedBook = {
+      ...book,
+      id: books.length + 1
+    }
+    books.push(updatedBook);
+  } else {
+    const index = books.findIndex(x => x.id === book.id);
+    if (index !== -1) {
+      books[index] = book;
+    }
+  }
+  const items = JSON.stringify(books)
+  localStorage.setItem('books', items);
+} 
+
+
+export {
+  setInitBooks,
+  getBooks,
+  saveBook
 }

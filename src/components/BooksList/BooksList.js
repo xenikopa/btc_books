@@ -14,6 +14,7 @@ export class BooksList extends React.Component {
             <div
               key={book.id}
               className='books__item'
+              onClick={() => this.props.onBookClick(book)}
             >
               <img src={booksImg} alt={book.title}/>
               <BookInfo info={book} />

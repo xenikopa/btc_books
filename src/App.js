@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.sass';
-import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import VisibleBooksList from './containers/VisibleBooks';
+import ModalContainer from './containers/ModalContainer';
+import Sidebar from './containers/Sidebar';
+import Notify from './containers/Notify';
 
 class App extends Component {
   render() {
@@ -15,7 +17,8 @@ class App extends Component {
             <VisibleBooksList />
           </main>
         </div>
-
+        <ModalContainer />
+        <Notify />
       </div>
     );
   }

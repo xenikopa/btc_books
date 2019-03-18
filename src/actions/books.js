@@ -4,7 +4,13 @@ const setVisibilityFilter = (filter) => {
     filter
   }
 }
+const updateBooks = () => {
+  return {
+    type: 'UPDATE_BOOKS'
+  }
+}
 
 export {
-  setVisibilityFilter
+  setVisibilityFilter,
+  updateBooks
 }

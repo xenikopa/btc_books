@@ -5,12 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import booksApp from './reducers';
 import { setInitBooks } from './storage/books';
+import rootReducer from './reducers';
+import ReactModal from 'react-modal';
 
+ReactModal.setAppElement('#root');
 setInitBooks();
-
-let store = createStore(booksApp);
+let store = createStore(rootReducer);
 
 ReactDOM.render((
   <Provider store={store}>

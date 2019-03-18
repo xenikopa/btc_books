@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Sidebar.sass';
-import BtnAdd from './BtnAdd';
-import HistoryList from './HistoryList';
-import Modal from '../Modal/Modal';
-import Menu from '../Menu/Menu';
-
+import '../components/Sidebar/Sidebar.sass';
+import BtnAdd from '../components/Sidebar/BtnAdd';
+import HistoryList from '../components/Sidebar/HistoryList';
+import Menu from '../components/Menu/Menu';
+import { openModal } from '../actions/modal';
+import { connect } from 'react-redux'
 class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +14,6 @@ class Sidebar extends Component {
 
     this.state = {
       selectedMenuItem: 'Browse',
-      isShowModal: false
     }
   }
 
@@ -25,11 +24,7 @@ class Sidebar extends Component {
   }
 
   onClickAdd(){
-    this.setState({isShowModal: true});
-  }
-
-  onCloseModal(){
-    this.setState({isShowModal: false});
+    this.props.dispatch(openModal(null));
   }
 
   render() {
@@ -50,13 +45,9 @@ class Sidebar extends Component {
           menuClass='sidebar__menu'
         />
         <HistoryList />
-        <Modal 
-          isShow={this.state.isShowModal} 
-          onClose={() => this.onCloseModal()}
-        />
       </aside>
     );
   }
 }
 
-export default Sidebar;
+export default connect()(Sidebar);

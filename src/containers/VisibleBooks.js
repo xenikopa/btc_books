@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { BooksList } from '../components/BooksList/BooksList';
+import { openModal } from '../actions/modal';
 
 const getVisibleBooks = (books, filter) => {
   const bookBySection = getBooksBySection(books, filter.section);
@@ -32,20 +33,20 @@ const getBooksByWord = (books, input) => {
 
 const mapStateToProps = (state) => {
   return {
-    books: getVisibleBooks(state.books, state.filter)
+    books: getVisibleBooks(state.booksApp.books, state.booksApp.filter)
   }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     onBookClick: (id) => {
-//       console.log(`Debug: click on book #${id}`);
-//     }
-//   }
-// }
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onBookClick: (form) => {
+      dispatch(openModal(form));
+    }
+  }
+}
 
 const VisibleBooksList = connect(
-  mapStateToProps,
+  mapStateToProps, mapDispatchToProps
 )(BooksList)
 
 export default VisibleBooksList

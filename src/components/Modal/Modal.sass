@@ -9,6 +9,17 @@
   overflow: auto;
   border-radius: 4px;
   outline: currentcolor none medium;
+  &__notify
+    display: flex;
+    font-size: 22px;
+    line-height: 26px;
+    color: #444c63;
+    font-family: "Arial";
+    font-weight: bold;
+    text-align: center;
+    height: 132px;
+    justify-content: center;
+    align-items: center;
   &__body
     border-top: 1px solid #dadfea;
     border-bottom: 1px solid #dadfea;
@@ -41,6 +52,10 @@
       width: 100%;
       padding: 10px 20px 20px 20px;
       min-width: 450px;
+      & .form-error
+        color: #de4c4c;
+        &:before
+          padding-right: 3px;
   &__footer
     flex-direction: row-reverse;
     align-items: center;

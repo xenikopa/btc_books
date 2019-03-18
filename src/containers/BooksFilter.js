@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../components/BooksList/BooksList.sass';
 import { connect } from 'react-redux';
-import { setVisibilityFilter } from '../actions';
+import { setVisibilityFilter } from '../actions/books';
 import FilterChecked from '../components/Header/Filter/FilterChecked';
 import SearchInput from '../components/Header/Filter/SearchInput';
 class BooksFilter extends Component {
@@ -44,10 +44,10 @@ class BooksFilter extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({booksApp}) => {
   return {
     getInitFilter: () => {
-      return state.filter.section
+      return booksApp.filter.section
     }
   }
 }
