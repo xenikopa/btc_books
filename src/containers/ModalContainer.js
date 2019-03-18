@@ -3,6 +3,7 @@ import Modal from '../components/Modal/Modal';
 import { closeModal, сloseAndSave } from '../actions/modal';
 import { updateBooks } from '../actions/books';
 import { openNotify } from '../actions/notify';
+import { updateHistory } from '../actions/history';
 const mapStateToProps = ({modal}) => {
   return modal;
 }
@@ -16,7 +17,8 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(сloseAndSave(form));
       dispatch(updateBooks());
       if(form.id === 0) {
-        dispatch(openNotify(form.title))
+        dispatch(openNotify(form.title));
+        dispatch(updateHistory(form));
       }
     }
   }

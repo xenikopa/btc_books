@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../components/Sidebar/Sidebar.sass';
 import BtnAdd from '../components/Sidebar/BtnAdd';
-import HistoryList from '../components/Sidebar/HistoryList';
 import Menu from '../components/Menu/Menu';
 import { openModal } from '../actions/modal';
 import { connect } from 'react-redux'
+import History from './History'
 class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +44,7 @@ class Sidebar extends Component {
           items={menuItems}
           menuClass='sidebar__menu'
         />
-        <HistoryList />
+        <History />
       </aside>
     );
   }

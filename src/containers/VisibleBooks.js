@@ -31,9 +31,9 @@ const getBooksByWord = (books, input) => {
     : books
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({booksApp}) => {
   return {
-    books: getVisibleBooks(state.booksApp.books, state.booksApp.filter)
+    books: getVisibleBooks(booksApp.books, booksApp.filter)
   }
 }
 
