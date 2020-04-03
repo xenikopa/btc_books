@@ -1,7 +1,7 @@
 {
   "name": "books",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.8.4",
@@ -30,5 +30,6 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "homepage": "/react-redux-books/"
 }
