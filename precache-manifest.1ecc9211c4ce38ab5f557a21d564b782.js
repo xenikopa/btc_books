@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/MyriadPro-Light.f4bf8ccd.ttf"
   },
   {
-    "revision": "2ce385668a650f356145ba6426da807a",
+    "revision": "d2f72004173b76b7b01e4e8248e6e689",
     "url": "/index.html"
   }
 ];
