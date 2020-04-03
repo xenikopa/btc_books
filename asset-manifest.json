@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.263293b4.chunk.css",
-  "main.js": "/static/js/main.deb67295.chunk.js",
-  "main.js.map": "/static/js/main.deb67295.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.75732e54.chunk.js": "/static/js/2.75732e54.chunk.js",
-  "static/js/2.75732e54.chunk.js.map": "/static/js/2.75732e54.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.1ecc9211c4ce38ab5f557a21d564b782.js": "/precache-manifest.1ecc9211c4ce38ab5f557a21d564b782.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.263293b4.chunk.css.map": "/static/css/main.263293b4.chunk.css.map",
-  "static/media/index.sass": "/static/media/MyriadPro-Light.f4bf8ccd.ttf",
-  "static/media/books.jpg": "/static/media/books.e10635ff.jpg"
+  "main.css": "/react-redux-books/static/css/main.5261f13d.chunk.css",
+  "main.js": "/react-redux-books/static/js/main.3e6ebc8a.chunk.js",
+  "main.js.map": "/react-redux-books/static/js/main.3e6ebc8a.chunk.js.map",
+  "runtime~main.js": "/react-redux-books/static/js/runtime~main.352029ac.js",
+  "runtime~main.js.map": "/react-redux-books/static/js/runtime~main.352029ac.js.map",
+  "static/js/2.2ad05943.chunk.js": "/react-redux-books/static/js/2.2ad05943.chunk.js",
+  "static/js/2.2ad05943.chunk.js.map": "/react-redux-books/static/js/2.2ad05943.chunk.js.map",
+  "index.html": "/react-redux-books/index.html",
+  "precache-manifest.3b814e7d542d0a8b367802427aa94560.js": "/react-redux-books/precache-manifest.3b814e7d542d0a8b367802427aa94560.js",
+  "service-worker.js": "/react-redux-books/service-worker.js",
+  "static/css/main.5261f13d.chunk.css.map": "/react-redux-books/static/css/main.5261f13d.chunk.css.map",
+  "static/media/index.sass": "/react-redux-books/static/media/MyriadPro-Light.f4bf8ccd.ttf",
+  "static/media/books.jpg": "/react-redux-books/static/media/books.e10635ff.jpg"
 }
