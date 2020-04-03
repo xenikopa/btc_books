@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c9f45e1e3c1016568c24",
-    "url": "/static/css/main.4dadbb43.chunk.css"
+    "revision": "4ec56eb42e6d9828f4a9",
+    "url": "/static/css/main.263293b4.chunk.css"
   },
   {
-    "revision": "c9f45e1e3c1016568c24",
-    "url": "/static/js/main.4a618d58.chunk.js"
+    "revision": "4ec56eb42e6d9828f4a9",
+    "url": "/static/js/main.deb67295.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "/static/media/books.e10635ff.jpg"
   },
   {
-    "revision": "c0b76443a2bd7bf6e4a02bd855d85905",
-    "url": "/static/media/MyriadPro-Light.c0b76443.woff"
-  },
-  {
     "revision": "7cce27d974e442554b248f0d2832908e",
     "url": "/static/media/MyriadPro-Light.7cce27d9.eot"
+  },
+  {
+    "revision": "c0b76443a2bd7bf6e4a02bd855d85905",
+    "url": "/static/media/MyriadPro-Light.c0b76443.woff"
   },
   {
     "revision": "f4bf8ccd575532aae5e5b07b1749de32",
     "url": "/static/media/MyriadPro-Light.f4bf8ccd.ttf"
   },
   {
-    "revision": "54b17fd6776c706596d5486f53a229bb",
+    "revision": "2ce385668a650f356145ba6426da807a",
     "url": "/index.html"
   }
 ];
